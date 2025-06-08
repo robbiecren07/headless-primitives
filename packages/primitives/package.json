@@ -1,0 +1,63 @@
+{
+  "name": "@headless-primitives/react",
+  "version": "0.1.0",
+  "description": "Composable, headless React primitives for modern apps.",
+  "license": "MIT",
+  "author": "Robbie Crenshaw",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robbiecren07/headless-primitives"
+  },
+  "keywords": [
+    "react",
+    "primitives",
+    "hooks",
+    "headless",
+    "typescript",
+    "a11y",
+    "composable",
+    "library"
+  ],
+  "sideEffects": false,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
+    "dev": "tsup src/index.ts --watch --format esm,cjs --dts --out-dir dist",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.33.1",
+    "@typescript-eslint/parser": "^8.33.1",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "jsdom": "^26.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "5.8.2",
+    "vitest": "^3.2.2"
+  }
+}
