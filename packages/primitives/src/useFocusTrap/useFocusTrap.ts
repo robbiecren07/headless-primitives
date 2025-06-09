@@ -13,12 +13,12 @@ function getFocusableElements(container: HTMLElement | null): HTMLElement[] {
   ).filter((el) => !el.hasAttribute('disabled') && !el.getAttribute('aria-hidden'))
 }
 
-export function useFocusTrap({
+export function useFocusTrap<T extends HTMLElement = HTMLElement>({
   enabled = true,
   initialFocusRef,
   restoreFocus = true,
-}: UseFocusTrapOptions = {}): UseFocusTrapReturn {
-  const containerRef = useRef<HTMLDivElement>(null)
+}: UseFocusTrapOptions = {}): UseFocusTrapReturn<T> {
+  const containerRef = useRef<T>(null)
   const previousFocusedElement = useRef<HTMLElement | null>(null)
 
   useEffect(() => {

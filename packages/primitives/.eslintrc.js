@@ -23,13 +23,11 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    // Example: Feel free to tune these for your team!
-    'react/react-in-jsx-scope': 'off', // Not needed in React 17+
-    'react/prop-types': 'off', // Using TypeScript for types
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-    // You can add more here!
   },
   settings: {
     react: {

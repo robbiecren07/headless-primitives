@@ -22,6 +22,7 @@ Type-first, DX-focused, and built for real-world use—not just utils.
 - `useDraggableList` — Reorderable/sortable lists, drag-and-drop logic (headless).
 - `useResizeHandle` — Drag-to-resize handles for split panes, tables, modals.
 - `useFocusTrap` — Keep keyboard focus inside containers (modals, drawers, overlays).
+- `useFocusZone` - Keyboard arrow-key navigation for focusable elements (menus, lists, toolbars, etc.)
 
 ## Installation
 

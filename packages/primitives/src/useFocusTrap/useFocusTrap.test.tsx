@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest'
 import { useFocusTrap } from './useFocusTrap'
 
 function TrapTest({ enabled = true }: { enabled?: boolean }) {
-  const { containerRef } = useFocusTrap({ enabled })
+  const { containerRef } = useFocusTrap<HTMLDivElement>({ enabled })
   return (
     <div ref={containerRef} tabIndex={-1}>
       <button>first</button>
