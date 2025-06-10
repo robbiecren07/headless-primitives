@@ -59,9 +59,6 @@
 - useTreeState
   Tree structure state (expand/collapse, keyboard, drag/drop).
 
-- useAutoAnimate
-  Auto-animates elements on state change (expand/collapse, list reordering).
-
 - useDialogManager
   Stackable dialogs/modals (handles nested modals, backdrops, esc).
 
